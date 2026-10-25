@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>ZanburakVideoProcessor</AssemblyName>
+    <RootNamespace>ZanburakVideoProcessor</RootNamespace>
+    <Product>پردازشگر ویدیو زنبورک</Product>
+    <Version>1.0.0</Version>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\tools\ffmpeg\ffmpeg.exe" Link="tools\ffmpeg\ffmpeg.exe" CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\..\tools\ffmpeg\ffmpeg.exe')" />
+    <None Include="..\..\tools\ffmpeg\ffprobe.exe" Link="tools\ffmpeg\ffprobe.exe" CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\..\tools\ffmpeg\ffprobe.exe')" />
+    <None Include="..\..\tools\ffmpeg\LICENSE" Link="tools\ffmpeg\LICENSE" CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\..\tools\ffmpeg\LICENSE')" />
+    <None Include="..\..\tools\ffmpeg\README.txt" Link="tools\ffmpeg\README.txt" CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\..\tools\ffmpeg\README.txt')" />
+    <None Include="..\..\tools\ffmpeg\README_FA.md" Link="tools\ffmpeg\README_FA.md" CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\..\tools\ffmpeg\README_FA.md')" />
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

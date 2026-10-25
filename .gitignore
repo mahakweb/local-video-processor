@@ -1,0 +1,6 @@
+bin/
+obj/
+publish/
+.dotnet/
+.dotnet-sdk.zip
+*.user
